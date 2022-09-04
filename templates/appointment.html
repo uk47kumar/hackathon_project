@@ -1,0 +1,310 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Tiny Coders Medical </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="static/assets/img/favicon.ico">
+    <script src="https://kit.fontawesome.com/584e2653f7.js" crossorigin="anonymous"></script>
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="static/assets/css/ankush.min.css">
+    <link rel="stylesheet" href="static/assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="static/assets/css/style.css">
+    <link rel="stylesheet" href="static/assets/css/slicknav.css">
+
+    <style>
+        .background {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="static/assets/img/logo/MADPHARM-1 (3).png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    <header>
+        <!--? Header Start -->
+        <div class="header-area" height="200px">
+            <div class="main-header header-sticky">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <!-- Logo -->
+                        <div class="col-xl-2 col-lg-2 col-md-1">
+                            <div class="logo">
+                                <a href="/Article_main"><img src="static/assets/img/logo/hi.png" alt="" width="100%"
+                                        height="auto"></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-10 col-lg-10 col-md-10">
+                            <div class="menu-main d-flex align-items-center justify-content-end">
+                                <!-- Main-menu -->
+                                <div class="main-menu f-right d-none d-lg-block">
+                                    <nav>
+                                        <ul id="navigation">
+                                            <li><a href="/Article_main">Home</a></li>
+                                            <li><a href="#about_us">About</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="header-right-btn f-right d-none d-lg-block ml-30">
+                                    <a href="/Article_Login" class="btn header-btn">LogOut</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+
+
+        <!--   Appointment Form    -->
+
+        <div class="contact-form-main" id="appointment_">
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="col-xl-7 col-lg-7">
+                        <div class="form-wrapper">
+                            <!--Section Tittle  -->
+                            <div class="form-tittle">
+                                <div class="row ">
+                                    <div class="col-xl-12">
+                                        <div class="section-tittle section-tittle2">
+                                            <h2>Appointment Form</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End Section Tittle  -->
+                            <form id="contact-form" method="post" action="{% url 'Appointment' %}">
+                                {%csrf_token%}
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="form-box user-icon mb-30">
+                                            <input type="text" name="name" placeholder="Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="form-box email-icon mb-30">
+                                            <input type="text" name="phonenumber" placeholder="phonenumber">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="form-box email-icon mb-30">
+                                            <input type="text" name="drname" placeholder="DR_name">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="form-box email-icon mb-30">
+                                            <input type="text" name="department" placeholder="Department">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="form-box subject-icon mb-30">
+                                            <input type="email" name="email" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-box message-icon mb-65">
+                                            <textarea name="message" id="message" placeholder="Message"></textarea>
+                                        </div>
+                                        <div class="submit-info">
+                                            </script>
+                                            <button class="btn" type="submit">Submit Now <i class="ti-arrow-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- contact left Img-->
+            <div class="from-left d-none d-lg-block"
+                style="background-image: -webkit-linear-gradient(0deg, #24c0f1 0%, #4c9afe 100%);">
+                <img src="static/assets/img/Images/header.png" alt="">
+            </div>
+        </div>
+        <footer>
+            <!--        Footer Start               -->
+            <div class="footer-area section-bg" data-background="static/assets/img/gallery/footer_bg.jpg" id="about_us">
+                <div class="container">
+                    <div class="footer-top footer-padding">
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-8">
+                                <div class="single-footer-caption mb-50">
+                                    <!-- logo -->
+                                    <div class="footer-logo">
+                                        <a href="Article_main"><img
+                                                src="static/assets/img/MADPHARM-logos_transparent.png" alt=""
+                                                width="100%"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-5">
+                                <div class="single-footer-caption mb-50">
+                                    <div class="footer-tittle">
+                                        <h4>About Us</h4>
+                                        <div class="footer-pera">
+                                            <img src="static/assets/img/logo/logo2.png">
+                                            <br>
+                                            <p class="info1">Team Leader: Deven Sharma</p>
+                                            <p class="info1">Member1: Ankush Garg</p>
+                                            <p class="info1">Member2: Ashish Kumar</p>
+                                            <p class="info1">Member3: Ujjawal Kumar</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
+                                <div class="single-footer-caption mb-50">
+                                    <div class="footer-number mb-50">
+                                        <p><span><i class="fa-solid fa-mobile-screen"></i></span>+91 9996539252</p>
+                                        <p><span><i class="fa-solid fa-envelope"></i></span>Coderstiny65@gmail.com</p>
+                                    </div>
+                                    <!-- Form -->
+                                    <div class="footer-form">
+                                        <div id="mc_embed_signup">
+                                            <form target="_blank"
+                                                action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                                                method="get" class="subscribe_form relative mail_part"
+                                                novalidate="true">
+                                                <input type="email" name="EMAIL" id="newsletter-form-email"
+                                                    placeholder=" Email Address " class="placeholder hide-on-focus"
+                                                    onfocus="this.placeholder = ''"
+                                                    onblur="this.placeholder = 'Your email address'">
+                                                <div class="form-icon">
+                                                    <button type="submit" name="submit" id="newsletter-submit"
+                                                        class="email_icon newsletter-submit button-contactForm">
+                                                        Send
+                                                    </button>
+                                                </div>
+                                                <div class="mt-10 info"></div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat_container collapse">
+                        <div class="chat-header">
+                            <img src="static\assets\img\logo\Small3.png">
+                            <!-- <div class="chat_logo">
+                                 <img src="static/assets/css/img/send.svg"> -->
+                            <!--  </div> -->
+                            <div class="chat_title">Let's Chat</div>
+                        </div>
+                        <div class="chat-body">
+                            <div clss="loading hide">
+                                <div class="circle circle-1"></div>
+                                <div class="circle circle-2"></div>
+                                <div class="circle circle-3"></div>
+                            </div>
+                        </div>
+                        <div class="chat-input">
+                            <div class="chat_input-sec">
+                                <input type="text" id="txtInput" placeholder="Typ here" autofocus />
+                            </div>
+                            <div class="chat_send">
+                                <img src="static/assets/img/send.svg" alt="send" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-bottom">
+                        <div class="row d-flex justify-content-between align-items-center">
+                            <div class="col-xl-9 col-lg-8">
+                                <div class="footer-copy-right" style="text-align: center;">
+                                    <p>
+                                        Copyright &copy;
+                                        <script>document.write(new Date().getFullYear());</script> All rights reserved |
+                                        Tiny Coders <i class="fa fa-heart" aria-hidden="true"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4">
+                                <!-- Footer Social -->
+                                <div class="footer-social f-right">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fas fa-globe"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href=""><i class="fa-brands fa-google"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End-->
+        </footer>
+        <!-- Scroll Up -->
+        <div id="back-top">
+            <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+        </div>
+
+        <!-- JS here -->
+
+        <script src="./static/assets/js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="./static/assets/js/app.js"></script>
+        <script src="./static/assets/js/response.js"></script>
+        <!-- Jquery, Popper, Bootstrap -->
+        <script src="./static/assets/js/vendor/jquery-1.12.4.min.js"></script>
+        <script src="./static/assets/js/popper.min.js"></script>
+        <script src="./static/assets/js/ankush.min.js"></script>
+        <!-- Jquery Mobile Menu -->
+        <script src="./static/assets/js/jquery.slicknav.min.js"></script>
+
+        <!-- Jquery Slick , Owl-Carousel Plugins -->
+        <script src="./static/assets/js/owl.carousel.min.js"></script>
+        <script src="./static/assets/js/slick.min.js"></script>
+        <!-- One Page, Animated-HeadLin -->
+        <script src="./static/assets/js/wow.min.js"></script>
+        <script src="./static/assets/js/animated.headline.js"></script>
+        <script src="./static/assets/js/jquery.magnific-popup.js"></script>
+
+        <!-- Date Picker -->
+        <script src="./static/assets/js/gijgo.min.js"></script>
+        <!-- Nice-select, sticky -->
+        <script src="./static/assets/js/jquery.nice-select.min.js"></script>
+        <script src="./static/assets/js/jquery.sticky.js"></script>
+
+        <!-- counter , waypoint -->
+        <script src="./static/assets/js/jquery.counterup.min.js"></script>
+        <script src="./static/assets/js/waypoints.min.js"></script>
+        <script src="./static/assets/js/jquery.countdown.min.js"></script>
+        <!-- contact js -->
+        <script src="./static/assets/js/contact.js"></script>
+        <script src="./static/assets/js/jquery.form.js"></script>
+        <script src="./static/assets/js/jquery.validate.min.js"></script>
+        <script src="./static/assets/js/mail-script.js"></script>
+        <script src="./static/assets/js/jquery.ajaxchimp.min.js"></script>
+
+        <!-- Jquery Plugins, main Jquery -->
+        <script src="./static/assets/js/plugins.js"></script>
+        <script src="./static/assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor SignUP</title>
+    <link rel="stylesheet" href="static/assets/css/DoctorsSignupForm.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+        </header>
+        <form id="Signup-form">
+            <h1 id="title" class="text-center">Doctor SignUP</h1>
+            <br>
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your Name" required />
+            </div>
+            <div class="form-group">
+                <label id="name-label" for="name">Doctor id</label>
+                <input type="number" name="id" id="ids" class="form-control" placeholder="Enter your Doctors i,d"
+                    required />
+            </div>
+            <div class="form-group">
+                <label id="name-label" for="name">Department</label>
+                <input type="text" name="dept" id="dept" class="form-control" placeholder="Enter your Department"
+                    required />
+            </div>
+            <div class="form-group">
+                <label id="name-label" for="name">Education</label>
+                <input type="text" name="edu" id="edu" class="form-control" placeholder="Enter your Education"
+                    required />
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email"
+                    required />
+            </div>
+            <div class="form-group">
+                <label id="name-label" for="name">Phone No.</label>
+                <input type="tel" name="phone" id="phone" class="form-control" placeholder="Enter your Phone No."
+                    required />
+            </div>
+            <div class="form-group">
+                <label id="password-label" for="name">Password</label>
+                <input type="password" name="password" id="password" class="password" placeholder="Enter Your Password"
+                    required />
+            </div>
+            <div class="form-group">
+                <label id="password-label" for="name">Confirm Password </label>
+                <input type="password" name="confirmpassword" id="confirmpassword" class="confirmpassword"
+                    placeholder="Re-Enter Your Password " required />
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                    Submit
+
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+<!--Password Chaker -->
+<!-- <script>
+    document.querySelector('.submit-button').onclick = function () {
+        var password = document.querySelector('.password').value,
+            confirmpassword = document.querySelector('.confirmPassword').value;
+
+        if (password == "") {
+            alert("Field cannot be empty.");
+        }
+        else if (password != confirmpassword) {
+            alert("Password didn't match /n Try Again.");
+            return false
+        }
+        else if (password == confirmpassword) {
+            // alert("Password Mached.")
+        }
+        return true
+    }
+</script>
+</html>

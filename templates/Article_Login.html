@@ -1,0 +1,930 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Tiny Coders Medical </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="static/assets/img/favicon.ico">
+    <script src="https://kit.fontawesome.com/584e2653f7.js" crossorigin="anonymous"></script>
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="static/assets/css/ankush.min.css">
+    <link rel="stylesheet" href="static/assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="static/assets/css/style.css">
+    <link rel="stylesheet" href="static/assets/css/slicknav.css">
+    <style>
+        .background {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="static/assets/img/logo/MADPHARM-1 (3).png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    <header>
+        <!--? Header Start -->
+        <div class="header-area" height="100px">
+            <div class="main-header header-sticky">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <!-- Logo -->
+                        <div class="col-xl-2 col-lg-2 col-md-1">
+                            <div class="logo">
+                                <a href="/Article_Login"><img src="static/assets/img/logo/Hi.png" alt="" width="100%"
+                                        height="auto"></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-10 col-lg-10 col-md-10">
+                            <div class="menu-main d-flex align-items-center justify-content-end">
+                                <!-- Main-menu -->
+                                <div class="main-menu f-right d-none d-lg-block">
+                                    <nav>
+                                        <ul id="navigation">
+                                            <li><a href="/Article_Login">Home</a></li>
+                                            
+                                            <li><a href="#deparment_">Department</a></li>
+                                            <li><a href="#doctor_">Doctors</a></li>
+                                            <li><a href="#about_us">About</a></li>
+                                            {% comment %} <li><a href="#blog_">Blog</a> {% endcomment %}
+                                            {% comment %} </li> {% endcomment %}
+                                            <li><a href="#contact_">Contact</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="header-right-btn f-right d-none d-lg-block ml-30">
+                                    <a href="/Login" class="btn header-btn">Login</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+    <main>
+
+        <div class="background"
+            style="background-image: -webkit-linear-gradient(0deg, #24c0f1 0%, #4c9afe 100%); height: 10%;">
+            <img src="static/assets/img/Images/about-img.png" height="100%" width="100%">
+        </div>
+
+        <!--    About Hospital    -->
+        <div class="about-area section-padding2" id="hospital_">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-10">
+                        <div class="about-caption mb-50">
+                            <!-- Section Tittle -->
+                            <div class="section-tittle section-tittle2 mb-35">
+                                <h2>Welcome To Our Hospital</h2>
+                            </div>
+                            <p>When a person has a medical concern, they may turn to a doctor for help. There are many
+                                types of doctor, and a person’s specific concern will usually determine the type of
+                                doctor they choose.</p>
+                            <div class="about-btn1 mb-30">
+                                <a href="#doctor_" class="btn about-btn">Find Doctors .</a>
+                            </div>
+                            <script>
+                                function ClickAlert() {
+                                    alert("Please SignUp/Login");
+                                }
+                            </script>
+                            <div class="about-btn1 mb-30">
+                                <a href="#please_first_signup/login" class="btn about-btn2"
+                                    onclick="ClickAlert()">Appointment </a>
+                            </div>
+                            <div class="about-btn1 mb-30">
+                                <a href="tel:822-292-5771" class="btn about-btn2" onclick="ClickAlert()">Emergency 1 </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <!-- about-img -->
+                        <div class="about-img ">
+                            <div class="about-font-img d-none d-lg-block">
+                                <img src="static/assets/img/gallery/about2.png" alt="">
+                            </div>
+                            <div class="about-back-img ">
+                                <img src="static/assets/img/gallery/about1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--     Our Department -->
+
+        <!--? department_area_start  -->
+        <div class="department_area section-padding2" id="deparment_">
+            <div class="container">
+                <!-- Section Tittle -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-tittle text-center mb-100">
+                            <h2>Our Medical Services</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="depart_ment_tab mb-30">
+                            <!-- Tabs Buttons -->
+                            <ul class="nav" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                        aria-controls="home" aria-selected="true">
+                                        <i class="flaticon-teeth"></i>
+                                        <h4>Dentistry</h4>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                        aria-controls="profile" aria-selected="false">
+                                        <i class="flaticon-cardiovascular"></i>
+                                        <h4>Cardiology</h4>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                                        aria-controls="contact" aria-selected="false">
+                                        <i class="flaticon-ear"></i>
+                                        <h4>ENT Specialists</h4>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="Astrology-tab" data-toggle="tab" href="#Astrology"
+                                        role="tab" aria-controls="contact" aria-selected="false">
+                                        <i class="flaticon-bone"></i>
+                                        <h4>Astrology</h4>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="Neuroanatomy-tab" data-toggle="tab" href="#Neuroanatomy"
+                                        role="tab" aria-controls="contact" aria-selected="false">
+                                        <i class="flaticon-lung"></i>
+                                        <h4>Neuroanatomy</h4>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="Blood-tab" data-toggle="tab" href="#Blood" role="tab"
+                                        aria-controls="contact" aria-selected="false">
+                                        <i class="flaticon-cell"></i>
+                                        <h4>Blood Screening</h4>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="dept_main_info white-bg">
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <!-- single_content  -->
+                            <div class="row align-items-center no-gutters">
+                                <div class="col-lg-7"
+                                    style="background-image: -webkit-linear-gradient(0deg, #24c0f1 0%, #4c9afe 100%);  height:100%">
+                                    <div class="dept_info">
+                                        <div style="height: 325px">
+                                            <h3 style="text-align:center;"><strong>DENTISTRY</strong></h3>
+                                            <table style="text-align:center; color:#fff; margin-left:20%; font-weight:bold;">
+                                                <tbody  >
+                                                    {% for data in datas %}
+                                                        <tr>
+                                                            <td style="padding-right:10px;text-align:left; ">{{data.name}}</td>
+                                                            <td style="padding:0px;text-align:left; ">-</td>
+                                                            <td style="padding-left:10px;text-align:left; ">{{data.email}}:</td>
+                                                        </tr>
+                                                    {% endfor %}                                                </tbody>
+                                            </table>
+                                            {% comment %} <p>The study and administration of general anesthesia, sedation, local
+                                                anesthesia and advanced methods of pain control. Recognized by both ADA
+                                                and ABDS. </p>
+                                            <script>
+                                                function ClickAlert() {
+                                                    alert("Please SignUp/Login");
+                                                }
+                                            </script>
+                                            <a href="#" class="dep-btn" onclick="ClickAlert()">Appointment</a> {% endcomment %}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5"
+                                    style="background-image: -webkit-linear-gradient(0deg, #24c0f1 0%, #4c9afe 100%);  height:100%">
+                                    <div class="dept_thumb">
+                                        <img src="static/assets/img/Images/doc-2.png" alt="" height="600px">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single_content  -->
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <!-- single_content  -->
+                            <div class="row align-items-center no-gutters">
+                                <div class="col-lg-7"
+                                    style="background-image: -webkit-linear-gradient(0deg, #24c0f1 0%, #4c9afe 100%);  height:100%">
+                                    <div class="dept_info">
+                                        <div style="height: 325px">
+                                            <h3 style="text-align:center;"><strong>CARDIOLOGY</strong></h3>
+                                            <table style="text-align:center; color:#fff; margin-left:20%; font-weight:bold;">
+                                                <tbody  >
+                                                    {% for data in datas %}
+                                                        <tr>
+                                                            <td style="padding-right:10px;text-align:left; ">{{data.name}}</td>
+                                                            <td style="padding:0px;text-align:left; ">-</td>
+                                                            <td style="padding-left:10px;text-align:left; ">{{data.email}}:</td>
+                                                        </tr>
+                                                    {% endfor %}                                                </tbody>
+                                            </table>
+                                            {% comment %} <p>Cardiology is concerned with the normal functionality of the heart and
+                                                the deviation from a healthy heart. Many disorders involve the heart
+                                                itself but some are outside of the heart and in the vascular system.
+                                                Collectively, the two together are termed the cardiovascular system and
+                                                diseases of one part tend to affect the other. </p>
+                                            <script>
+                                                function ClickAlert() {
+                                                    alert("Please SignUp/Login");
+                                                }
+                                            </script>
+                                            <a href="#" class="dep-btn" onclick="ClickAlert()">Appointment</a> {% endcomment %}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5"
+                                    style="background-image: -webkit-linear-gradient(0deg, #24c0f1 0%, #4c9afe 100%);  height:100%">
+                                    <div class="dept_thumb">
+                                        <img src="static/assets/img/Images/doc-3.png" alt="" height="600px">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single_content  -->
+                        </div>
+                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                            <!-- single_content  -->
+                            <div class="row align-items-center no-gutters">
+                                <div class="col-lg-7"
+                                    style="background-image: -webkit-linear-gradient(0deg, #24c0f1 0%, #4c9afe 100%);  height:100%">
+                                    <div class="dept_info">
+                                        <div style="height: 325px">
+                                            <h3 style="text-align:center;"><strong>ENT Specialists</strong></h3>
+                                            <table style="text-align:center; color:#fff; margin-left:20%; font-weight:bold;">
+                                                <tbody  >
+                                                    {% for data in datas %}
+                                                        <tr>
+                                                            <td style="padding-right:10px;text-align:left; ">{{data.name}}</td>
+                                                            <td style="padding:0px;text-align:left; ">-</td>
+                                                            <td style="padding-left:10px;text-align:left; ">{{data.email}}:</td>
+                                                        </tr>
+                                                    {% endfor %}                                                </tbody>
+                                            </table>
+                                            {% comment %} <p>An ENT specialist or an otolaryngologist is a physician trained to treat
+                                                patients with issues pertaining to the ear, nose, throat and structures
+                                                of the neck and head. This is a specialist with the skills required for
+                                                diagnosing and treating diseases of the larynx, upper pharynx, sinuses
+                                                and oral cavity.</p>
+                                            <script>
+                                                function ClickAlert() {
+                                                    alert("Please SignUp/Login");
+                                                }
+                                            </script>
+                                            <a href="#" class="dep-btn" onclick="ClickAlert()">Appointment</a> {% endcomment %}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5"
+                                    style="background-image: -webkit-linear-gradient(0deg, #24c0f1 0%, #4c9afe 100%);  height:100%">
+                                    <div class="dept_thumb" height="100%">
+                                        <img src="static/assets/img/Images/doc-1.png" alt="" height="600px">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single_content  -->
+                        </div>
+                        <div class="tab-pane fade" id="Astrology" role="tabpanel" aria-labelledby="Astrology-tab">
+                            <!-- single_content  -->
+                            <div class="row align-items-center no-gutters">
+                                <div class="col-lg-7"
+                                    style="background-image: -webkit-linear-gradient(0deg, #24c0f1 0%, #4c9afe 100%);  height:100%">
+                                    <div class="dept_info">
+                                        <div style="height: 325px">
+                                            <h3 style="text-align:center;"><strong>Astrology</strong></h3>
+                                            <table style="text-align:center; color:#fff; margin-left:20%; font-weight:bold;">
+                                                <tbody  >
+                                                    {% for data in datas %}
+                                                        <tr>
+                                                            <td style="padding-right:10px;text-align:left; ">{{data.name}}</td>
+                                                            <td style="padding:0px;text-align:left; ">-</td>
+                                                            <td style="padding-left:10px;text-align:left; ">{{data.email}}:</td>
+                                                        </tr>
+                                                    {% endfor %}                                                </tbody>
+                                            </table>
+                                            {% comment %} <p>In medical astrology, the bones (human skeleton) are ruled by Saturn and
+                                                influenced by Capricorn. The Sun or the Moon in Capricorn signifies the
+                                                osseous system. The processes of hardening, crystallization,
+                                                ossification, bone-building and deposits of mineral substances in the
+                                                bones are signified by Saturn.</p>
+                                            <script>
+                                                function ClickAlert() {
+                                                    alert("Please SignUp/Login");
+                                                }
+                                            </script>
+                                            <a href="#" class="dep-btn" onclick="ClickAlert()">Appointment</a> {% endcomment %}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5"
+                                    style="background-image: -webkit-linear-gradient(0deg, #24c0f1 0%, #4c9afe 100%);  height:100%">
+                                    <div class="dept_thumb">
+                                        <img src="static/assets/img/Images/doc-2.png" alt="" height="600px">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single_content  -->
+                        </div>
+                        <div class="tab-pane fade" id="Neuroanatomy" role="tabpanel" aria-labelledby="Neuroanatomy-tab">
+                            <!-- single_content  -->
+                            <div class="row align-items-center no-gutters">
+                                <div class="col-lg-7"
+                                    style="background-image: -webkit-linear-gradient(0deg, #24c0f1 0%, #4c9afe 100%);  height:100%">
+                                    <div class="dept_info">
+                                        <div style="height: 325px">
+                                            <h3 style="text-align:center;"><strong>Neuroanatomy</strong></h3>
+                                            <table style="text-align:center; color:#fff; margin-left:20%; font-weight:bold;">
+                                                <tbody  >
+                                                    {% for data in datas %}
+                                                        <tr>
+                                                            <td style="padding-right:10px;text-align:left; ">{{data.name}}</td>
+                                                            <td style="padding:0px;text-align:left; ">-</td>
+                                                            <td style="padding-left:10px;text-align:left; ">{{data.email}}:</td>
+                                                        </tr>
+                                                    {% endfor %}                                                </tbody>
+                                            </table>
+                                            {% comment %} <p>Branch of neuroscience. Neuroanatomy is the study of the anatomy and
+                                                organisation of the nervous system. Pictured here is a cross-section
+                                                showing the gross anatomy of the human brain. Neuroanatomy is the study
+                                                of the structure and organization of the nervous system.</p>
+                                            <script>
+                                                function ClickAlert() {
+                                                    alert("Please SignUp/Login");
+                                                }
+                                            </script>
+                                            <a href="#" class="dep-btn" onclick="ClickAlert()">Appointment</a> {% endcomment %}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5"
+                                    style="background-image: -webkit-linear-gradient(0deg, #24c0f1 0%, #4c9afe 100%);  height:100%">
+                                    <div class="dept_thumb">
+                                        <img src="static/assets/img/Images/doc-3.png" alt="" height="600px">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single_content  -->
+                        </div>
+                        <div class="tab-pane fade" id="Blood" role="tabpanel" aria-labelledby="Blood-tab">
+                            <!-- single_content  -->
+                            <div class="row align-items-center no-gutters">
+                                <div class="col-lg-7"
+                                    style="background-image: -webkit-linear-gradient(0deg, #24c0f1 0%, #4c9afe 100%);  height:100%">
+                                    <div class="dept_info">
+                                        <div style="height: 325px">
+                                            <h3 style="text-align:center;"><strong>Blood Screening</strong></h3>
+                                            <table style="text-align:center; color:#fff; margin-left:20%; font-weight:bold;">
+                                                <tbody  >
+                                                    {% for data in datas %}
+                                                        <tr>
+                                                            <td style="padding-right:10px;text-align:left; ">{{data.name}}</td>
+                                                            <td style="padding:0px;text-align:left; ">-</td>
+                                                            <td style="padding-left:10px;text-align:left; ">{{data.email}}:</td>
+                                                        </tr>
+                                                    {% endfor %}                                                </tbody>
+                                            </table>
+                                            {% comment %} <p>Blood screening involves a single test with the resultant action, such as
+                                                the release or discard of the donation arising from that single test
+                                                alone, even though an initially reactive result may be followed by
+                                                repeat testing.</p>
+                                            <script>
+                                                function ClickAlert() {
+                                                    alert("Please SignUp/Login");
+                                                }
+                                            </script>
+                                            <a href="#" class="dep-btn" onclick="ClickAlert()">Appointment</a> {% endcomment %}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5"
+                                    style="background-image: -webkit-linear-gradient(0deg, #24c0f1 0%, #4c9afe 100%);  height:100%">
+                                    <div class="dept_thumb">
+                                        <img src="static/assets/img/Images/doc-1.png" alt="" height="600px">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single_content  -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About  End-->
+        <!--? All startups Start -->
+        {% comment %} <div class="all-starups-area testimonial-area fix" id="blog_">
+            <!-- left Contents -->
+            <div class="starups">
+                <!--? Testimonial Start -->
+                <div class="h1-testimonial-active">
+                    <!-- Single Testimonial -->
+                    <div class="single-testimonial text-center">
+                        <!-- Testimonial Content -->
+                        <div class="testimonial-caption ">
+                            <div class="testimonial-top-cap">
+
+                                <p> Being one of the best orthopaedic surgeons, he hones surgery of the spine, including
+                                    cervical, thoracic, and lumbar disorders, disk herniation, spinal stenosis,
+                                    spondylolisthesis, spondylotic myelopathy, spinal cord injury, and spine trauma.
+                                    Also, he discovered many new techniques for spine treatment.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial End -->
+            </div>
+            <!--Right Contents  -->
+            <div class="starups-img"></div>
+        </div> {% endcomment %}
+        <!--All startups End -->
+        <!--   Medical Camp     -->
+        <div class="gallery-area section-padding30">
+            <div class="container">
+                <!-- Section Tittle -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="section-tittle text-center mb-100">
+                            <h2>Our Medical Camp</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Left -->
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="single-gallery mb-30">
+                                    <div class="gallery-img big-img"
+                                        style="background-image: url(static/assets/img/gallery/gallery1.png);"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="single-gallery mb-30">
+                                    <div class="gallery-img small-img"
+                                        style="background-image: url(static/assets/img/gallery/gallery2.png);"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="single-gallery mb-30">
+                                    <div class="gallery-img small-img"
+                                        style="background-image: url(static/assets/img/gallery/gallery3.png);"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Right -->
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="single-gallery mb-30">
+                                    <div class="gallery-img small-img"
+                                        style="background-image: url(static/assets/img/gallery/gallery4.png);">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="single-gallery mb-30">
+                                    <div class="gallery-img small-img"
+                                        style="background-image: url(static/assets/img/gallery/gallery5.png);"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="single-gallery mb-30">
+                                    <div class="gallery-img big-img"
+                                        style="background-image: url(static/assets/img/gallery/gallery6.png);"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Gallery Area End -->
+
+        <!--      Our Doctors     -->
+
+
+
+
+        <div class="team-area section-padding30" id="doctor_">
+            <div class="container">
+                <!-- Section Tittle -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="section-tittle text-center mb-100">
+                            <h2>Our Specialist</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+                        <div class="single-team mb-30">
+                            <div class="team-img">
+                                <img src="static/assets/img/gallery/team2.png" alt="">
+                            </div>
+                            <div class="team-caption">
+                                <h3><a
+                                        href="https://www.bing.com/maps?osid=cd63386f-e1ca-40ed-af3c-aca9752b5791&cp=43.675594~-72.277864&lvl=16&imgid=2960f949-6feb-4c27-a896-beb51aed2966&v=2&sV=2&form=S00027">Dr
+                                        William A.Abdu</a></h3>
+                                <span>M.D,M.S.</span>
+                                <!-- Team social -->
+                                <div class="team-social">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fas fa-globe"></i></a>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                    <span><i class="fa-solid fa-mobile-screen"></i> +1(603)650-2225</span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+                        <div class="single-team mb-30">
+                            <div class="team-img">
+                                <img src="static/assets/img/gallery/team3.png" alt="">
+                            </div>
+                            <div class="team-caption">
+                                <h3><a
+                                        href="https://www.bing.com/maps?osid=c0a3d3ca-dbe8-4230-8de9-28d2f45114b5&cp=37.856491~-122.261669&lvl=16&imgid=74bbf31f-100a-49a9-a292-acc9c2bd5d14&v=2&sV=2&form=S00027">Dr
+                                        Myles.B.Abbott</a></h3>
+                                <span>M.D.</span>
+                                <!-- Team social -->
+                                <div class="team-social">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fas fa-globe"></i></a>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                    <span><i class="fa-solid fa-mobile-screen"></i> +1(925)253-9203</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+                        <div class="single-team mb-30">
+                            <div class="team-img">
+                                <img src="static/assets/img/gallery/team1.png" alt="">
+                            </div>
+                            <div class="team-caption">
+                                <h3><a
+                                        href="https://www.bing.com/maps?osid=8904f58b-af75-4b27-8269-3ff794607f1c&cp=39.430678~-76.998338&lvl=10&imgid=711e05de-dcf9-416c-9924-98bc0f0bad6c&v=2&sV=2&form=S00027">Dr
+                                        Fouad.M.Abbas</a></h3>
+                                <span>M.D.</span>
+                                <!-- Team social -->
+                                <div class="team-social">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fas fa-globe"></i></a>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                    <span><i class="fa-solid fa-mobile-screen"></i> +1(410)350-3686</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+                        <div class="single-team mb-30">
+                            <div class="team-img">
+                                <img src="static/assets/img/gallery/team1.png" alt="">
+                            </div>
+                            <div class="team-caption">
+                                <h3><a href="https://health.usnews.com/doctors/khalid-abbed-7174">Dr Khalid Abbed</a>
+                                </h3>
+                                <span>M.D.</span>
+                                <!-- Team social -->
+                                <div class="team-social">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fas fa-globe"></i></a>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                    <span><i class="fa-solid fa-mobile-screen"></i> (203)737-1942</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+                        <div class="single-team mb-30">
+                            <div class="team-img">
+                                <img src="static/assets/img/gallery/team2.png" alt="">
+                            </div>
+                            <div class="team-caption">
+                                <h3><a href="https://www.vaidam.com/doctors/dr-naresh-trehan-cardiology">Dr Naresg
+                                        Trehan</a></h3>
+                                <span>Cardiothoracic surgeon</span>
+                                <!-- Team social -->
+                                <div class="team-social">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fas fa-globe"></i></a>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                    <span><i class="fa-solid fa-mobile-screen"></i> 8010994994 </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+                        <div class="single-team mb-30">
+                            <div class="team-img">
+                                <img src="static/assets/img/gallery/team3.png" alt="">
+                            </div>
+                            <div class="team-caption">
+                                <h3><a href="https://health.usnews.com/doctors/arthur-abright-12543">Dr Arthur Reese
+                                        Abright</a></h3>
+                                <span>M.D.</span>
+                                <!-- Team social -->
+                                <div class="team-social">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fas fa-globe"></i></a>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                    <span><i class="fa-solid fa-mobile-screen"></i> (212) 659-8838</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <section class="contact-section" id="contact_">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="section-tittle text-center mb-100">
+                    <h2>Contact us</h2>
+                </div>
+            </div>
+            <div class="container">
+                <div class="contact-left">
+                    <div style="width: 100%">
+                        <iframe width="100%" height="600" frameborder="1" scrolling="no" marginheight="0"
+                            marginwidth="0"
+                            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Yamunanagar,Haryana+(buisness)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                                href="https://www.gps.ie/sport-gps/">swimming watch</a></iframe>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="contact-title">Get in Touch</h2>
+                    </div>
+                    <div class="col-lg-8">
+                        <form class="form-contact contact_form" action="{% url 'saveEnquiry' %}" method="post" id="form"
+                            novalidate="novalidate">
+                            {%csrf_token%}
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <textarea class="form-control w-100" name="message" id="message" cols="30"
+                                            rows="9" onfocus="this.placeholder = ''"
+                                            onblur="this.placeholder = 'Enter Message'"
+                                            placeholder=" Enter Message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input class="form-control valid" name="name" id="name" type="text"
+                                            onfocus="this.placeholder = ''"
+                                            onblur="this.placeholder = 'Enter your name'" placeholder="Enter your name">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input class="form-control valid" name="email" id="email" type="email"
+                                            onfocus="this.placeholder = ''"
+                                            onblur="this.placeholder = 'Enter email address'" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <input class="form-control" name="subject" id="subject" type="text"
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'"
+                                            placeholder="Enter Subject">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group mt-3">
+                                <button type="submit" class="button button-contactForm boxed-btn">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-3 offset-lg-1">
+                        <div class="media contact-info">
+                            <span class="contact-info__icon"><i class="fa-solid fa-house-user"></i></span>
+                            <div class="media-body">
+                                <h3>MMDU University</h3>
+                                <p>Mullana,Ambaa</p>
+                            </div>
+                        </div>
+                        <div class="media contact-info">
+                            <span class="contact-info__icon"><i class="fa-solid fa-mobile-screen"></i></span>
+                            <div class="media-body">
+                                <h3>+91 99965 39252</h3>
+                                <p>24 HOURS</p>
+                            </div>
+                        </div>
+                        <div class="media contact-info">
+                            <span class="contact-info__icon"><i class="fa-solid fa-envelope"></i></span>
+                            <div class="media-body">
+                                <h3>Coderstiny65@gmail.com</h3>
+                                <p>Send us your query anytime!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <footer>
+        <!--        Footer Start               -->
+        <div class="footer-area section-bg" data-background="static/assets/img/gallery/footer_bg.jpg" id="about_us">
+            <div class="container">
+                <div class="footer-top footer-padding">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-8">
+                            <div class="single-footer-caption mb-50">
+                                <!-- logo -->
+                                <div class="footer-logo">
+                                    <a href="Article.html"><img src="static/assets/img/MADPHARM-logos_transparent.png"
+                                            alt="" width="100%"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-5">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>About Us</h4>
+                                    <div class="footer-pera">
+                                        <img src="static/assets/img/logo/logo2.png">
+                                        <br>
+                                        <p class="info1">Team Leader: Deven Sharma</p>
+                                        <p class="info1">Member1: Ankush Garg</p>
+                                        <p class="info1">Member2: Ashish Kumar</p>
+                                        <p class="info1">Member3: Ujjawal Kumar</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-number mb-50">
+                                    <p><span><i class="fa-solid fa-mobile-screen"></i></span>+91 9996539252</p>
+                                    <p><span><i class="fa-solid fa-envelope"></i></span>Coderstiny65@gmail.com</p>
+                                </div>
+                                <!-- Form -->
+                                <div class="footer-form">
+                                    <div id="mc_embed_signup">
+                                        <form target="_blank"
+                                            action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                                            method="get" class="subscribe_form relative mail_part" novalidate="true">
+                                            <input type="email" name="EMAIL" id="newsletter-form-email"
+                                                placeholder=" Email Address " class="placeholder hide-on-focus"
+                                                onfocus="this.placeholder = ''"
+                                                onblur="this.placeholder = 'Your email address'">
+                                            <div class="form-icon">
+                                                <button type="submit" name="submit" id="newsletter-submit"
+                                                    class="email_icon newsletter-submit button-contactForm">
+                                                    Send
+                                                </button>
+                                            </div>
+                                            <div class="mt-10 info"></div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat_container collapse">
+                    <div class="chat-header">
+                      <div class="chat_logo">
+                        <img src="static/assets/css/img/send.svg">
+                      </div>
+                      <div class="chat_title">Let's Chat</div>
+                    </div>
+                    <div class="chat-body">
+                        <div clss="loading hide">
+                            <div class="circle circle-1"></div>
+                            <div class="circle circle-2"></div>
+                            <div class="circle circle-3"></div>
+                        </div>
+                    </div>
+                    <div class="chat-input">
+                      <div class="chat_input-sec">
+                        <input type="text" id="txtInput" placeholder="Typ here" autofocus />
+                      </div>
+                      <div class="chat_send">
+                        <img src="static/assets/img/send.svg" alt="send" />
+                      </div>
+                    </div>
+                  </div>
+                <div class="footer-bottom">
+                    <div class="row d-flex justify-content-between align-items-center">
+                        <div class="col-xl-9 col-lg-8">
+                            <div class="footer-copy-right" style="text-align: center;">
+                                <p>
+                                    Copyright &copy;
+                                    <script>document.write(new Date().getFullYear());</script> All rights reserved |
+                                    Tiny Coders <i class="fa fa-heart" aria-hidden="true"></i>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4">
+                            <!-- Footer Social -->
+                            <div class="footer-social f-right">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fas fa-globe"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href=""><i class="fa-brands fa-google"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End-->
+    </footer>
+    <!-- Scroll Up -->
+    <div id="back-top">
+        <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+    </div>
+
+    <!-- JS here -->
+
+    <script src="./static/assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="./static/assets/js/app.js"></script>
+    <script src="./static/assets/js/response.js"></script>
+    <!-- Jquery, Popper, ankush -->
+    <script src="./static/assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="./static/assets/js/popper.min.js"></script>
+    <script src="./static/assets/js/ankush.min.js"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="./static/assets/js/jquery.slicknav.min.js"></script>
+
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="./static/assets/js/owl.carousel.min.js"></script>
+    <script src="./static/assets/js/slick.min.js"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="./static/assets/js/wow.min.js"></script>
+    <script src="./static/assets/js/animated.headline.js"></script>
+    <script src="./static/assets/js/jquery.magnific-popup.js"></script>
+
+    <!-- Date Picker -->
+    <script src="./static/assets/js/gijgo.min.js"></script>
+    <!-- Nice-select, sticky -->
+    <script src="./static/assets/js/jquery.nice-select.min.js"></script>
+    <script src="./static/assets/js/jquery.sticky.js"></script>
+
+    <!-- counter , waypoint -->
+    <script src="./static/assets/js/jquery.counterup.min.js"></script>
+    <script src="./static/assets/js/waypoints.min.js"></script>
+    <script src="./static/assets/js/jquery.countdown.min.js"></script>
+    <!-- contact js -->
+    <script src="./static/assets/js/contact.js"></script>
+    <script src="./static/assets/js/jquery.form.js"></script>
+    <script src="./static/assets/js/jquery.validate.min.js"></script>
+    <script src="./static/assets/js/mail-script.js"></script>
+    <script src="./static/assets/js/jquery.ajaxchimp.min.js"></script>
+
+    <!-- Jquery Plugins, main Jquery -->
+    <script src="./static/assets/js/plugins.js"></script>
+    <script src="./static/assets/js/main.js"></script>
+
+</body>
+
+</html>

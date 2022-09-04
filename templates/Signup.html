@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/assets/css/Singup.css">
+    <link rel="stylesheet" href="static/assets/css/ankush.min.css">
+    <link rel="stylesheet" href="static/assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="static/assets/css/style.css">
+    <link rel="stylesheet" href="static/assets/css/slicknav.css">
+</head>
+
+<body>
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="static/assets/img/logo/MADPHARM-1 (3).png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <header class="header">
+        </header>
+        <form id="Signup-form" action="" method="post" id="form">
+            {% comment %} {% url 'Sign' %} {% endcomment %}
+            
+            <h1 id="title" class="text-center">SIGNUP</h1>
+            <br>           
+            <div class = "signup-failed">{{userAreadyExists}}</div>
+            <div class = "signup-success">{{signup_Success}}</div>
+            <br><br>
+            <span class="loginOnSignUp"><i> click here to &nbsp</i> <a href="{% url "Login" %}"> login </a></span> 
+
+            {%csrf_token%}
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email"
+                    required />
+            </div>
+            <div class="form-group">
+                <label id="phone-label" for="phone">Phone Number</label>
+                <input type="phone" name="phone" id="phone" class="form-control" placeholder="Enter your Phone_number"
+                    required />
+                    
+            </div>
+            <div class="form-group">
+                <label class="col-md-12 control-label" for="passwordinput">
+                    Password
+                </label>
+                <div class="col-md-12">
+                    <input id="password" class="form-control"
+                    name="password" type="password" 
+                    placeholder="Enter your password" width="90%">
+                    <span class="show-pass" onclick="toggle()">
+                        <i class="far fa-eye" onclick="myFunction(this)"></i>
+                    </span>
+                    <div id="popover-password">
+                        <p><span id="result"></span></p>
+                        <div class="progress" style="height:2px;">
+                            <div id="password-strength" 
+                                class="progress-bar" 
+                                role="progressbar" 
+                                aria-valuenow="40" 
+                                aria-valuemin="0" 
+                                aria-valuemax="100" 
+                                style="width:0%">
+                            </div>
+                        </div>
+                        <ul class="list-unstyled" style="text-align:left;margin-left:25%;">
+                            <li class="" style="color:white;font-weight:bold;">
+                                <span class="low-upper-case">
+                                    <i class="fas fa-circle" aria-hidden="true" style="border:2px solid ;"></i>
+                                    &nbsp;Lowercase &amp; Uppercase
+                                </span>
+                            </li>
+                            <li class="" style="color:white;font-weight:bold;">
+                                <span class="one-number">
+                                    <i class="fas fa-circle" aria-hidden="true" style="border:2px solid ;"></i>
+                                    &nbsp;Number (0-9)
+                                </span> 
+                            </li>
+                            <li class="" style="color:white;font-weight:bold;">
+                                <span class="one-special-char">
+                                    <i class="fas fa-circle" aria-hidden="true" style="border:2px solid ;"></i>
+                                    &nbsp;Special Character (!@#$%^&*)
+                                </span>
+                            </li>
+                            <li class="" style="color:white;font-weight:bold;">
+                                <span class="eight-character">
+                                    <i class="fas fa-circle" aria-hidden="true" style="border:2px solid ;"></i>
+                                    &nbsp;Atleast 8 Character
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="form-group">
+                <label id="password-label" for="name">Confirm Password</label>
+                <input type="password" name="confirmedpassword" id="confirmedpassword" class="confirmPassword"
+                    placeholder="Re-Enter your Password " required />
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                    Submit
+                </button>
+            </div>
+            <a></a>
+        </form>
+    </div>
+    <!-- Password Chaker -->
+    <script>
+        document.querySelector('.submit-button').onclick = function () {
+            var password = document.querySelector('.password').value,
+                confirmpassword = document.querySelector('.confirmPassword').value;
+
+            if (password == "") {
+                alert("Field cannot be empty.");
+            }
+            else if (password != confirmpassword) {
+                alert("Password didn't match /n Try Again.");
+                return false
+            }
+            else if (password == confirmpassword) {
+                // alert("Password Mached.")
+            }
+            return true
+        }
+    </script>
+
+    <!-- End -->
+    <script src="./static/assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="./static/assets/js/passwordAuthantication.js"></script>
+    <!-- Jquery, Popper, ankush -->
+    <script src="./static/assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="./static/assets/js/popper.min.js"></script>
+    <script src="./static/assets/js/ankush.min.js"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="./static/assets/js/jquery.slicknav.min.js"></script>
+
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="./static/assets/js/owl.carousel.min.js"></script>
+    <script src="./static/assets/js/slick.min.js"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="./static/assets/js/wow.min.js"></script>
+    <script src="./static/assets/js/animated.headline.js"></script>
+    <script src="./static/assets/js/jquery.magnific-popup.js"></script>
+
+    <!-- Date Picker -->
+    <script src="./static/assets/js/gijgo.min.js"></script>
+    <!-- Nice-select, sticky -->
+    <script src="./static/assets/js/jquery.nice-select.min.js"></script>
+    <script src="./static/assets/js/jquery.sticky.js"></script>
+
+    <!-- counter , waypoint -->
+    <script src="./static/assets/js/jquery.counterup.min.js"></script>
+    <script src="./static/assets/js/waypoints.min.js"></script>
+    <script src="./static/assets/js/jquery.countdown.min.js"></script>
+    <!-- contact js -->
+    <script src="./static/assets/js/contact.js"></script>
+    <script src="./static/assets/js/jquery.form.js"></script>
+    <script src="./static/assets/js/jquery.validate.min.js"></script>
+    <script src="./static/assets/js/mail-script.js"></script>
+    <script src="./static/assets/js/jquery.ajaxchimp.min.js"></script>
+
+    <!-- Jquery Plugins, main Jquery -->
+    <script src="./static/assets/js/plugins.js"></script>
+    <script src="./static/assets/js/main.js"></script>
+</body>
+
+</html>
